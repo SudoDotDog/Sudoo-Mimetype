@@ -5,5 +5,5 @@
  */
 
 export * from "./image";
-export * from "./mimetype";
+export * from "./media-type";
 

@@ -4,6 +4,6 @@
  * @description Image
  */
 
-import { Mimetype } from "./mimetype";
+import { MediaType } from "./media-type";
 
-export const jpegMimetype: Mimetype = Mimetype.create();
+export const jpegMimetype: MediaType = MediaType.create();
