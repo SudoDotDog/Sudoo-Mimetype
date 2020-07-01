@@ -6,11 +6,15 @@
 
 export class Mimetype {
 
-    public static create() {
+    public static create(): Mimetype {
 
         return new Mimetype();
     }
 
+    private readonly _children: Mimetype[];
+
     private constructor() {
+
+        this._children = [];
     }
 }
