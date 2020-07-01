@@ -9,7 +9,7 @@ import { MediaType } from "../media-type";
 export const mp4MediaType: MediaType = MediaType.withOptions({
 
     mimeTypes: [
-        'image/mp4',
+        'video/mp4',
     ],
     extensions: [
         'mp4',
@@ -19,7 +19,7 @@ export const mp4MediaType: MediaType = MediaType.withOptions({
 export const wmvMediaType: MediaType = MediaType.withOptions({
 
     mimeTypes: [
-        'image/wmv',
+        'video/wmv',
     ],
     extensions: [
         'wmv',
@@ -29,7 +29,7 @@ export const wmvMediaType: MediaType = MediaType.withOptions({
 export const aviMediaType: MediaType = MediaType.withOptions({
 
     mimeTypes: [
-        'image/avi',
+        'video/avi',
     ],
     extensions: [
         'avi',

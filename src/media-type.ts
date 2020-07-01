@@ -122,6 +122,48 @@ export class MediaType {
         return false;
     }
 
+    public matchFirstAvailableMimeType(extension: string): string | null {
+
+        const fixedExtension: string = fixExtension(extension);
+        if (this._extensions.length > 0
+            && this._mimeTypes.length > 0
+            && this._extensions.includes(fixedExtension)
+        ) {
+            return this._mimeTypes[0];
+        }
+
+        for (const each of this._children) {
+
+            const mimeType: string | null = each.matchFirstAvailableMimeType(extension);
+            if (mimeType) {
+                return mimeType;
+            }
+        }
+
+        return null;
+    }
+
+    public matchFirstAvailableExtension(mimeType: string): string | null {
+
+        const fixedMimeType: string = fixMimeType(mimeType);
+        if (this._mimeTypes.length > 0
+            && this._extensions.length > 0
+            && this._mimeTypes.includes(fixedMimeType)
+        ) {
+            return this._extensions[0];
+        }
+
+        for (const each of this._children) {
+
+            const extension: string | null = each.matchFirstAvailableExtension(mimeType);
+            if (extension) {
+                return extension;
+            }
+        }
+
+        return null;
+    }
+
     public getFirstAvailableMimeType(): string | null {
 
         if (this._mimeTypes.length > 0) {
