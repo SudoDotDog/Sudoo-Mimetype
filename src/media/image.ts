@@ -46,3 +46,13 @@ export const pngMediaType: MediaType = MediaType.withOptions({
         'png',
     ],
 });
+
+export const imageMediaType: MediaType = MediaType.withOptions({
+
+    children: [
+        jpegMediaType,
+        gifMediaType,
+        webpMediaType,
+        pngMediaType
+    ],
+});
