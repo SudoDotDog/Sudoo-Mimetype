@@ -1,9 +1,9 @@
 /**
  * @author WMXPY
- * @namespace Mimetype
+ * @namespace Mimetype_Media
  * @description Image
  */
 
-import { MediaType } from "./media-type";
+import { MediaType } from "../media-type";
 
 export const jpegMimetype: MediaType = MediaType.create();

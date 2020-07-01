@@ -1,13 +1,13 @@
 /**
  * @author WMXPY
- * @namespace Mimetype
+ * @namespace Mimetype_Media
  * @description Image
  * @override Unit
  */
 
 import { expect } from 'chai';
 import * as Chance from "chance";
-import { jpegMimetype, MediaType } from '../../src';
+import { jpegMimetype, MediaType } from '../../../src';
 
 describe('Given [Image] classes', (): void => {
 

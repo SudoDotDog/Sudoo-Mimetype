@@ -4,6 +4,6 @@
  * @description Index
  */
 
-export * from "./image";
 export * from "./media-type";
+export * from "./media/image";
 
