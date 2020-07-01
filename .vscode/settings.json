@@ -1,0 +1,11 @@
+{
+    "cSpell.words": [
+        "WMXPY",
+        "mimetype",
+        "sudoo",
+        "triforce"
+    ],
+    "eslint.options": {
+        "configFile": "./typescript/.eslintrc.json"
+    }
+}
