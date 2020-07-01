@@ -1,8 +1,7 @@
 {
   "name": "@sudoo/mimetype",
-  "version": "1.1.0",
-  "description": ":fish_cake: Simple calculate for js",
-  "main": "index.js",
+  "version": "1.0.0",
+  "description": ":file_folder: Mimetype Handler",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SudoDotDog/Sudoo-Abacus.git"
@@ -19,7 +18,7 @@
   "dependencies": {},
   "devDependencies": {
     "@sudoo/io": "^1.8.0",
-    "@sudoo/triforce": "^2.7.4"
+    "@sudoo/triforce": "^2.7.5"
   },
   "nyc": {
     "extension": [
