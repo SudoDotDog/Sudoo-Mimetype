@@ -7,9 +7,9 @@
 
 import { expect } from 'chai';
 import * as Chance from "chance";
-import { gifMediaType, jpegMediaType, MediaType, pngMediaType, webpMediaType } from '../../../src';
+import { gifMediaType, imageMediaType, jpegMediaType, MediaType, pngMediaType, webpMediaType } from '../../../src';
 
-describe('Given [Image] classes', (): void => {
+describe('Given <Image> classes', (): void => {
 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const chance: Chance.Chance = new Chance('mimetype-image');
@@ -20,5 +20,7 @@ describe('Given [Image] classes', (): void => {
         expect(gifMediaType).to.be.instanceOf(MediaType);
         expect(webpMediaType).to.be.instanceOf(MediaType);
         expect(pngMediaType).to.be.instanceOf(MediaType);
+
+        expect(imageMediaType).to.be.instanceOf(MediaType);
     });
 });
