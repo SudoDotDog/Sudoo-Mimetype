@@ -4,6 +4,6 @@
  * @description Index
  */
 
-export * from "./image/jpeg";
+export * from "./image";
 export * from "./mimetype";
 

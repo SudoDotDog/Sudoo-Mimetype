@@ -4,8 +4,13 @@
  * @description Mimetype
  */
 
-export abstract class Mimetype {
+export class Mimetype {
 
-    protected constructor() {
+    public static create() {
+
+        return new Mimetype();
+    }
+
+    private constructor() {
     }
 }
