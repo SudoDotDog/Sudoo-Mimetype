@@ -7,7 +7,7 @@
 
 import { expect } from 'chai';
 import * as Chance from "chance";
-import { jpegMimetype, MediaType } from '../../../src';
+import { gifMediaType, jpegMediaType, MediaType, pngMediaType, webpMediaType } from '../../../src';
 
 describe('Given [Image] classes', (): void => {
 
@@ -16,6 +16,9 @@ describe('Given [Image] classes', (): void => {
 
     it('should be able to verify instance', (): void => {
 
-        expect(jpegMimetype).to.be.instanceOf(MediaType);
+        expect(jpegMediaType).to.be.instanceOf(MediaType);
+        expect(gifMediaType).to.be.instanceOf(MediaType);
+        expect(webpMediaType).to.be.instanceOf(MediaType);
+        expect(pngMediaType).to.be.instanceOf(MediaType);
     });
 });

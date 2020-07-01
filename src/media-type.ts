@@ -9,7 +9,7 @@ export type MediaTypeCreateOptions = {
     readonly mimeTypes: string[];
     readonly extensions: string[];
 
-    readonly children: MediaType[];
+    readonly children?: MediaType[];
 };
 
 export class MediaType {
@@ -24,7 +24,10 @@ export class MediaType {
         const mediaType: MediaType = new MediaType();
         mediaType.addMimeTypeList(options.mimeTypes);
         mediaType.addExtensionList(options.extensions);
-        mediaType.addChildList(options.children);
+
+        if (Array.isArray(options.children)) {
+            mediaType.addChildList(options.children);
+        }
 
         return mediaType;
     }
