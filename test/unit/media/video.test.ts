@@ -7,7 +7,7 @@
 
 import { expect } from 'chai';
 import * as Chance from "chance";
-import { aviMediaType, MediaType, mp4MediaType, videoMediaType, wmvMediaType } from '../../../src';
+import { aviMediaType, MediaType, mp4MediaType, wmvMediaType } from '../../../src';
 
 describe('Given <Video> classes', (): void => {
 
@@ -19,7 +19,5 @@ describe('Given <Video> classes', (): void => {
         expect(mp4MediaType).to.be.instanceOf(MediaType);
         expect(wmvMediaType).to.be.instanceOf(MediaType);
         expect(aviMediaType).to.be.instanceOf(MediaType);
-
-        expect(videoMediaType).to.be.instanceOf(MediaType);
     });
 });

@@ -35,12 +35,3 @@ export const aviMediaType: MediaType = MediaType.withOptions({
         'avi',
     ],
 });
-
-export const videoMediaType: MediaType = MediaType.withOptions({
-
-    children: [
-        mp4MediaType,
-        wmvMediaType,
-        aviMediaType,
-    ],
-});
