@@ -6,6 +6,7 @@
 
 import { MediaType } from "./media-type";
 import { gifMediaType, jpegMediaType, pngMediaType, webpMediaType } from "./media/image";
+import { pdfMediaType, zipMediaType } from "./media/multi";
 import { csvMediaType, plainMediaType } from "./media/text";
 import { aviMediaType, mp4MediaType, wmvMediaType } from "./media/video";
 
@@ -36,11 +37,20 @@ export const textMediaType: MediaType = MediaType.withOptions({
     ],
 });
 
+export const multiMediaType: MediaType = MediaType.withOptions({
+
+    children: [
+        pdfMediaType,
+        zipMediaType,
+    ],
+});
+
 export const allMediaType: MediaType = MediaType.withOptions({
 
     children: [
         videoMediaType,
         imageMediaType,
         textMediaType,
+        multiMediaType,
     ],
 });
