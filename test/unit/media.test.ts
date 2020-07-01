@@ -7,7 +7,7 @@
 
 import { expect } from 'chai';
 import * as Chance from "chance";
-import { MediaType, imageMediaType, videoMediaType } from '../../src';
+import { imageMediaType, MediaType, textMediaType, videoMediaType } from '../../src';
 
 describe('Given <Media> combined classes', (): void => {
 
@@ -18,5 +18,6 @@ describe('Given <Media> combined classes', (): void => {
 
         expect(imageMediaType).to.be.instanceOf(MediaType);
         expect(videoMediaType).to.be.instanceOf(MediaType);
+        expect(textMediaType).to.be.instanceOf(MediaType);
     });
 });
