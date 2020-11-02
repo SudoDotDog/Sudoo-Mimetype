@@ -24,3 +24,7 @@ Match mimetype by extension name with the following code.
 import { allMediaType } from "@sudoo/mimetype";
 allMediaType.matchFirstAvailableMimeType('.jpg'); // image/jpeg
 ```
+
+`videoMediaType`, `imageMediaType`, `textMediaType`,  `multiMediaType` are also provided from the package.
+
+Create another Media type and other features are also easy, see source code for more details.
