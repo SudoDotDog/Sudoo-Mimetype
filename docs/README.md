@@ -14,3 +14,13 @@ yarn add @sudoo/mimetype
 # Or
 npm install @sudoo/mimetype --save
 ```
+
+## Usage
+
+This package provide multiple mimetype collections.  
+Match mimetype by extension name with the following code.
+
+```ts
+import { allMediaType } from "@sudoo/mimetype";
+allMediaType.matchFirstAvailableMimeType('.jpg'); // image/jpeg
+```
